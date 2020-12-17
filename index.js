@@ -69,7 +69,7 @@ const welcome = () => {
 
   const letsBegin = readlineSync.question(chalk.blue(`Type ${chalk.bold.green('start')} to begin the quiz `));
   console.log(`      `)
-  if (letsBegin === 'start') {
+  if (letsBegin.toLowerCase() === 'start') {
     
     for (let i = 0; i < quizQuestions.length; i++) {
       
